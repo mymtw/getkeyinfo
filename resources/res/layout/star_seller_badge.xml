@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/star_seller_badge_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/star_seller_badge_icon" android:layout_width="@dimen/clg_icon_size_smaller" android:layout_height="@dimen/clg_icon_size_smaller" android:src="@drawable/clg_icon_core_starseller_v1" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/clg_space_4" app:tint="@color/star_seller"/>
+    <TextView android:textColor="@color/star_seller" android:id="@+id/star_seller_badge_label" android:background="@drawable/layer_star_seller_underline" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clg_text_title_small"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/rippleOnSurface">
+    <item android:id="@android:id/mask">
+        <inset android:insetTop="@dimen/clg_space_4" android:insetBottom="@dimen/clg_space_4">
+            <shape android:shape="rectangle">
+                <corners android:radius="25sp"/>
+                <solid android:color="@color/clg_color_bubblegum"/>
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <inset android:insetTop="@dimen/clg_space_4" android:insetBottom="@dimen/clg_space_4">
+            <shape android:shape="rectangle">
+                <corners android:radius="25sp"/>
+                <stroke android:width="2dp" android:color="?attr/clg_color_actiongroup_outline"/>
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="150" android:exitFadeDuration="150">
+            <item android:state_selected="true">
+                <inset android:insetTop="@dimen/clg_space_4" android:insetBottom="@dimen/clg_space_4">
+                    <shape android:shape="rectangle">
+                        <corners android:radius="25sp"/>
+                        <stroke android:width="2dp" android:color="?attr/clg_color_actiongroup_circle_selected"/>
+                    </shape>
+                </inset>
+            </item>
+        </selector>
+    </item>
+</ripple>

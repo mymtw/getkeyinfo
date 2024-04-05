@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/clg_elevation_12">
+    <com.google.android.material.appbar.MaterialToolbar android:gravity="bottom" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/clg_elevation_4" app:buttonGravity="bottom" app:titleMarginBottom="@dimen/clg_space_16"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="?attr/clg_color_bg_primary" android:padding="@dimen/clg_space_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.etsy.android.stylekit.views.CollageTextInput android:id="@+id/edit_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" app:labelText="@string/new_message_username" app:multiLine="false" app:required="true"/>
+            <com.etsy.android.stylekit.views.CollageTextInput android:id="@+id/edit_subject" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_16" app:labelText="@string/new_message_subject" app:multiLine="false" app:required="true"/>
+            <com.etsy.android.stylekit.views.CollageTextInput android:id="@+id/edit_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_16" app:labelText="@string/new_message_message" app:multiLine="true" app:required="true"/>
+            <com.etsy.android.uikit.view.ImageAttachmentLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/linear_convo_image_attachments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_16"/>
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <Button android:id="@+id/button_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_20" android:text="@string/new_message_add_photos" app:icon="@drawable/clg_icon_core_camera_v1" style="@style/clg_button_tertiary"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

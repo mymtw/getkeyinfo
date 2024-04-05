@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Braze.Push.InlineImage.TextArea.Header.AppIcon">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:tint">#777777</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DayNight">
+    </style>
+    <style name="Theme.Material3.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.Material3.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface">
+    </style>
+    <style name="clg_theme_default">
+        <item name="android:textColorPrimary">?attr/clg_color_text_primary</item>
+        <item name="android:textColorSecondary">?attr/clg_color_text_secondary</item>
+        <item name="android:textColorPrimaryInverse">?attr/clg_color_text_primary_inverse</item>
+        <item name="android:windowBackground">?attr/clg_color_bg_primary</item>
+        <item name="android:textColorHighlight">?attr/clg_color_interaction_pressed</item>
+        <item name="android:textColorLink">?attr/clg_color_text_link</item>
+        <item name="android:colorEdgeEffect">?attr/rippleOnSurface</item>
+        <item name="clg_button_primary_icon_on_dark">@style/clg_button_primary_icon</item>
+        <item name="clg_button_primary_icon_on_light">@style/clg_button_primary_icon_inverse</item>
+        <item name="clg_button_primary_icon_small_on_dark">@style/clg_button_primary_icon_small</item>
+        <item name="clg_button_primary_icon_small_on_light">@style/clg_button_primary_icon_small_inverse</item>
+        <item name="clg_button_primary_on_dark">@style/clg_button_primary</item>
+        <item name="clg_button_primary_on_light">@style/clg_button_primary_inverse</item>
+        <item name="clg_button_primary_small_on_dark">@style/clg_button_primary_small</item>
+        <item name="clg_button_primary_small_on_light">@style/clg_button_primary_small_inverse</item>
+        <item name="clg_button_secondary_icon_on_dark">@style/clg_button_secondary_icon</item>
+        <item name="clg_button_secondary_icon_on_light">@style/clg_button_secondary_icon_inverse</item>
+        <item name="clg_button_secondary_icon_small_on_dark">@style/clg_button_secondary_icon_small</item>
+        <item name="clg_button_secondary_icon_small_on_light">@style/clg_button_secondary_icon_small_inverse</item>
+        <item name="clg_button_secondary_on_dark">@style/clg_button_secondary</item>
+        <item name="clg_button_secondary_on_light">@style/clg_button_secondary_inverse</item>
+        <item name="clg_button_secondary_small_on_dark">@style/clg_button_secondary_small</item>
+        <item name="clg_button_secondary_small_on_light">@style/clg_button_secondary_small_inverse</item>
+        <item name="clg_button_tertiary_icon_on_dark">@style/clg_button_tertiary_icon</item>
+        <item name="clg_button_tertiary_icon_on_light">@style/clg_button_tertiary_icon_inverse</item>
+        <item name="clg_button_tertiary_icon_small_on_dark">@style/clg_button_tertiary_icon_small</item>
+        <item name="clg_button_tertiary_icon_small_on_light">@style/clg_button_tertiary_icon_small_inverse</item>
+        <item name="clg_button_tertiary_on_dark">@style/clg_button_tertiary_transparent</item>
+        <item name="clg_button_tertiary_on_light">@style/clg_button_tertiary_inverse</item>
+        <item name="clg_button_tertiary_small_on_dark">@style/clg_button_tertiary_small</item>
+        <item name="clg_button_tertiary_small_on_light">@style/clg_button_tertiary_small_inverse</item>
+        <item name="clg_button_tertiary_transparent_icon_on_dark">@style/clg_button_tertiary_transparent_icon</item>
+        <item name="clg_button_tertiary_transparent_icon_on_light">@style/clg_button_tertiary_transparent_icon_inverse</item>
+        <item name="clg_button_tertiary_transparent_icon_small_on_dark">@style/clg_button_tertiary_transparent_icon_small</item>
+        <item name="clg_button_tertiary_transparent_icon_small_on_light">@style/clg_button_tertiary_transparent_icon_small_inverse</item>
+        <item name="clg_button_tertiary_transparent_on_dark">@style/clg_button_tertiary_transparent</item>
+        <item name="clg_button_tertiary_transparent_on_light">@style/clg_button_tertiary_transparent_inverse</item>
+        <item name="clg_button_tertiary_transparent_small_on_dark">@style/clg_button_tertiary_transparent_small</item>
+        <item name="clg_button_tertiary_transparent_small_on_light">@style/clg_button_tertiary_transparent_small_inverse</item>
+        <item name="clg_color_actiongroup_circle_selected">@color/clg_color_white</item>
+        <item name="clg_color_actiongroup_outline">@color/clg_color_steel</item>
+        <item name="clg_color_actiongroup_standard_fill">@color/clg_color_steel</item>
+        <item name="clg_color_alert_error">@color/clg_color_brick</item>
+        <item name="clg_color_alert_info">@color/clg_color_denim_variant</item>
+        <item name="clg_color_alert_info_subtle">@color/clg_color_steel</item>
+        <item name="clg_color_alert_news">@color/clg_color_denim_light</item>
+        <item name="clg_color_alert_success">@color/clg_color_denim_tint_variant</item>
+        <item name="clg_color_alert_warning">@color/clg_color_beeswax_tint_variant</item>
+        <item name="clg_color_badge_notification_primary">@color/clg_color_orange_light</item>
+        <item name="clg_color_badge_notification_secondary">@color/clg_color_denim_light_variant</item>
+        <item name="clg_color_badge_notification_tertiary">@color/clg_color_white</item>
+        <item name="clg_color_badge_price_modifier">@color/clg_color_slime_tint_variant</item>
+        <item name="clg_color_badge_price_modifier_text">?attr/clg_color_text_primary_inverse</item>
+        <item name="clg_color_badge_primary_text">?attr/clg_color_text_primary_inverse</item>
+        <item name="clg_color_badge_status_primary">@color/clg_color_beeswax_tint_variant</item>
+        <item name="clg_color_badge_status_secondary">@color/clg_color_charcoal</item>
+        <item name="clg_color_badge_status_tertiary">@color/clg_color_white</item>
+        <item name="clg_color_badge_status_tertiary_outline">@color/clg_color_charcoal</item>
+        <item name="clg_color_badge_status_urgent">@color/clg_color_brick_tint_variant</item>
+        <item name="clg_color_bg_brand_icon_container_empty">@color/clg_color_ice_at_fifteen_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_error01">@color/clg_color_beeswax_light_at_eightyfive_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_error02">@color/clg_color_brick_light_at_eightyfive_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_marketing02">@color/clg_color_denim_tint_at_fifteen_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_marketing03">@color/clg_color_denim_tint_at_eightyfive_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_success01">@color/clg_color_denim_tint_at_eightyfive_percent_opacity</item>
+        <item name="clg_color_bg_brand_icon_container_success02">@color/clg_color_denim_tint</item>
+        <item name="clg_color_bg_destructive">@color/clg_color_brick</item>
+        <item name="clg_color_bg_edge">@color/clg_color_denim_dark</item>
+        <item name="clg_color_bg_error">@color/clg_color_brick</item>
+        <item name="clg_color_bg_image">@color/clg_color_charcoal</item>
+        <item name="clg_color_bg_listing_image_backdrop">@color/clg_color_black</item>
+        <item name="clg_color_bg_primary">@color/clg_color_hematite</item>
+        <item name="clg_color_bg_search_view">@color/clg_color_black</item>
+        <item name="clg_color_bg_secondary">@color/clg_color_charcoal</item>
+        <item name="clg_color_brand_icon">@color/clg_color_black</item>
+        <item name="clg_color_brand_icon_empty">@color/clg_color_silver</item>
+        <item name="clg_color_brand_icon_marketing">@color/clg_color_denim_light</item>
+        <item name="clg_color_divider">@color/clg_color_charcoal</item>
+        <item name="clg_color_favorite_heart">@color/clg_color_brick_light</item>
+        <item name="clg_color_icon">?attr/clg_color_text_primary</item>
+        <item name="clg_color_image_upload_border">@color/clg_color_charcoal</item>
+        <item name="clg_color_interaction_button">@color/clg_bg_white_selector</item>
+        <item name="clg_color_interaction_button_inverse">@color/clg_bg_black_selector</item>
+        <item name="clg_color_interaction_button_secondary">@color/clg_text_inverse_denim_selector</item>
+        <item name="clg_color_interaction_button_tertiary">@color/clg_color_white_at_sixteen_percent_opacity</item>
+        <item name="clg_color_interaction_button_tertiary_inverse">@color/clg_color_black_at_twelve_percent_opacity</item>
+        <item name="clg_color_interaction_disabled">@color/clg_color_charcoal</item>
+        <item name="clg_color_interaction_enabled_selected">@color/clg_color_white</item>
+        <item name="clg_color_interaction_enabled_unselected">@color/clg_color_steel</item>
+        <item name="clg_color_interaction_pressed">@color/clg_color_charcoal</item>
+        <item name="clg_color_interaction_text">@color/clg_text_white_charcoal_selector</item>
+        <item name="clg_color_notification">@color/clg_color_orange_light</item>
+        <item name="clg_color_page_control">@color/clg_color_steel_as_white_opacity</item>
+        <item name="clg_color_page_control_selected">@color/clg_color_white</item>
+        <item name="clg_color_progress_bar_indicator">@color/clg_color_white</item>
+        <item name="clg_color_progress_bar_track">@color/clg_color_charcoal</item>
+        <item name="clg_color_select_arrow">@color/clg_color_white</item>
+        <item name="clg_color_select_outline">@color/clg_color_steel_as_white_opacity</item>
+        <item name="clg_color_select_outline_disabled">@color/clg_color_steel_as_white_opacity</item>
+        <item name="clg_color_select_outline_focused">@color/clg_color_white</item>
+        <item name="clg_color_switch_thumb_checked">@color/clg_color_white</item>
+        <item name="clg_color_switch_thumb_unchecked">@color/clg_color_steel</item>
+        <item name="clg_color_switch_track_checked">@color/clg_color_switch_track_dark_checked</item>
+        <item name="clg_color_switch_track_unchecked">@color/clg_color_switch_track_dark_unchecked</item>
+        <item name="clg_color_tabs_scrollable_hint">@color/clg_color_surface_at_12dp_elevation</item>
+        <item name="clg_color_tabs_underline">@color/clg_color_charcoal_as_white_opacity</item>
+        <item name="clg_color_text_button_tertiary">@color/clg_text_white_charcoal_selector</item>
+        <item name="clg_color_text_destructive">@color/clg_color_brick_light_variant</item>
+        <item name="clg_color_text_error">@color/clg_color_brick_light_variant</item>
+        <item name="clg_color_text_input_cursor">@color/clg_color_white</item>
+        <item name="clg_color_text_input_disabled_bg">@color/clg_color_charcoal</item>
+        <item name="clg_color_text_input_error_bg">@color/clg_color_brick_dark_variant</item>
+        <item name="clg_color_text_input_icons">@color/clg_color_white</item>
+        <item name="clg_color_text_link">@color/clg_text_white_selector</item>
+        <item name="clg_color_text_pricemodifier">@color/clg_color_slime_variant</item>
+        <item name="clg_color_text_primary">@color/clg_text_white_selector</item>
+        <item name="clg_color_text_primary_inverse">@color/clg_color_black</item>
+        <item name="clg_color_text_primary_on_dark">?attr/clg_color_text_primary</item>
+        <item name="clg_color_text_primary_on_light">?attr/clg_color_text_primary_inverse</item>
+        <item name="clg_color_text_search_hint">@color/clg_color_silver</item>
+        <item name="clg_color_text_secondary">@color/clg_color_silver</item>
+        <item name="clg_color_text_status_primary">@color/clg_color_beeswax_dark_variant</item>
+        <item name="clg_color_text_tertiary">@color/clg_color_aluminum</item>
+        <item name="clg_color_text_urgency">@color/clg_color_brick_light_variant</item>
+        <item name="clg_color_tooltip_bg">@color/clg_color_charcoal</item>
+        <item name="clg_color_tooltip_text">@color/clg_color_white</item>
+        <item name="clg_dialog_bg">@drawable/clg_dialog_bg_dark</item>
+        <item name="colorAccent">@color/clg_color_white</item>
+        <item name="colorControlNormal">@color/clg_color_white</item>
+        <item name="colorPrimary">@color/clg_color_white</item>
+        <item name="colorPrimaryDark">@color/clg_color_black</item>
+        <item name="colorSurface">?attr/clg_color_bg_primary</item>
+        <item name="popupMenuBackground">@drawable/clg_popupmenu_bg_dark</item>
+        <item name="rippleOnInverseSurface">@color/clg_bg_pressed_gray_on_white</item>
+        <item name="rippleOnSurface">@color/clg_bg_pressed_gray_on_black</item>
+        <item name="rippleOnTintedInverseSurface">@color/clg_bg_pressed_dark_gray_on_white</item>
+        <item name="rippleOnTintedSurface">@color/clg_bg_pressed_light_gray_on_black</item>
+    </style>
+</resources>

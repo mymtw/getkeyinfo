@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_4" android:layout_marginBottom="@dimen/clg_space_4" android:layout_marginStart="@dimen/clg_space_8" android:layout_marginEnd="@dimen/clg_space_8" app:cardCornerRadius="@dimen/clg_elevation_4" app:cardElevation="@dimen/clg_elevation_2">
+        <LinearLayout android:orientation="vertical" android:id="@+id/click_region" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/image_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/clg_space_12" android:layout_marginTop="@dimen/clg_space_12" android:layout_marginRight="@dimen/clg_space_12"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottom" android:paddingLeft="@dimen/clg_space_12" android:paddingTop="@dimen/clg_space_8" android:paddingRight="@dimen/clg_space_12" android:paddingBottom="@dimen/clg_space_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/avatar" android:visibility="gone" android:layout_width="@dimen/card_avatar_small" android:layout_height="@dimen/card_avatar_small" android:scaleType="centerCrop" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/clg_space_8"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/clg_text_title"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_2">
+                        <TextView android:textColor="?attr/clg_color_text_secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/clg_space_2" app:drawableTint="?attr/clg_color_text_secondary" style="@style/clg_text_body"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/title_icon" android:visibility="gone" android:layout_width="@dimen/text_medium" android:layout_height="@dimen/text_medium" android:importantForAccessibility="no" android:layout_marginStart="@dimen/margin_small" app:srcCompat="@drawable/clg_icon_core_lock_v1"/>
+                    </LinearLayout>
+                    <com.etsy.android.stylekit.views.ratings.CollageRatingView android:id="@+id/rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:clg_size="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

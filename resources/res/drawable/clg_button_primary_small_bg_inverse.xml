@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/rippleOnSurface">
+    <item>
+        <inset android:insetTop="6sp" android:insetBottom="6sp">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/clg_button_cap_radius"/>
+                <solid android:color="?attr/clg_color_interaction_button_inverse"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>

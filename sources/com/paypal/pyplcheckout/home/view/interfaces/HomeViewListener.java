@@ -1,0 +1,4 @@
+package com.paypal.pyplcheckout.home.view.interfaces;
+
+public interface HomeViewListener extends PayPalCompoundHeaderViewListener, PayPalShippingViewListener, PayPalCurrencyConversionViewListener, PayPalExpandedCartDetailsViewListener, PayPalSnappingRecyclerViewListener, PayPalPoliciesAndRightsLinkViewListener, PayPalCheckoutButtonClickedListener {
+}

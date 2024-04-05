@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView android:id="@+id/settings_card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/clg_space_16" app:cardCornerRadius="@dimen/clg_corner_radius" app:cardElevation="@dimen/clg_elevation_4" app:layout_constraintBottom_toTopOf="@+id/sign_out_button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        </com.google.android.material.card.MaterialCardView>
+        <Button android:id="@+id/sign_out_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_24" android:text="@string/sign_out" android:layout_marginStart="@dimen/clg_space_16" android:layout_marginEnd="@dimen/clg_space_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/settings_card" app:layout_constraintVertical_bias="0" style="@style/clg_button_primary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

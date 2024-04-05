@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_28" android:text="@string/helpdesk_heading_findquick" android:layout_marginStart="@dimen/clg_space_16" android:layout_marginEnd="@dimen/clg_space_16" style="@style/clg_text_body"/>
+    <include android:id="@+id/fragment_help_btn_helpcenter" layout="@layout/fragment_help_item"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_32" android:text="@string/helpdesk_heading_getassistance" android:layout_marginStart="@dimen/clg_space_16" android:layout_marginEnd="@dimen/clg_space_16" style="@style/clg_text_body"/>
+    <include android:id="@+id/fragment_help_btn_contactshop" layout="@layout/fragment_help_item"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.stylekit.views.CollageContentToggle xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/item_details_panel" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_isExpanded="true" app:clg_showBottomDivider="false" app:clg_titleText="@string/item_details"/>

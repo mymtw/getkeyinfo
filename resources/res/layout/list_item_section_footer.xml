@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginStart="-8dp" android:layout_marginEnd="-8dp">
+    <com.etsy.android.stylekit.views.CollageButton android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/tooltip_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableTint="?attr/clg_color_text_tertiary" style="@style/clg_button_tertiary_transparent_small"/>
+</FrameLayout>

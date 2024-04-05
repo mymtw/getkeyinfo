@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/constraint_layout" android:background="@color/drawer_scrim" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/clg_elevation_12">
+    <com.google.android.material.card.MaterialCardView android:background="?attr/clg_color_bg_primary" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="@dimen/dialog_max_height_percent" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_max="-2" app:layout_constraintWidth_percent="@dimen/dialog_max_width_percent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linear_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/dialog_header"/>
+            <View android:id="@+id/divider" android:background="?attr/clg_color_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:importantForAccessibility="no"/>
+            <TextView android:paddingTop="@dimen/clg_space_16" android:paddingBottom="@dimen/clg_space_32" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_msg_checkout_paypal" android:lineSpacingExtra="@dimen/clg_space_8" android:layout_marginStart="@dimen/clg_space_16" android:layout_marginEnd="@dimen/clg_space_16"/>
+            <Button android:id="@+id/single_listing_checkout_paypal_checkout" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_24" android:text="@string/listing_proceed_to_checkout_paypal" android:layout_marginStart="@dimen/clg_space_16" android:layout_marginEnd="@dimen/clg_space_16" style="@style/clg_button_primary"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

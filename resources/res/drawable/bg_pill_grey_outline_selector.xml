@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/colorControlHighlight">
+    <item android:drawable="@drawable/bg_pill_grey_outline"/>
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/related_tag_radius"/>
+            <solid android:color="?android:attr/colorAccent"/>
+            <size android:height="@dimen/related_tag_height"/>
+        </shape>
+    </item>
+</ripple>

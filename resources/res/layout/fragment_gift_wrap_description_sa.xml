@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/gift_wrap_description_container" android:background="@color/drawer_scrim" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/clg_space_48" android:elevation="@dimen/sa_dialog_elevation">
+        <TextView android:id="@+id/gift_wrap_description_title" android:padding="@dimen/clg_elevation_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_with" style="@style/clg_text_title_large"/>
+        <FrameLayout android:background="?attr/clg_color_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.etsy.android.uikit.view.ListingFullImageView android:id="@+id/gift_wrap_photo" android:padding="@dimen/clg_space_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <TextView android:id="@+id/gift_wrap_description" android:paddingLeft="@dimen/clg_space_16" android:paddingRight="@dimen/clg_space_16" android:paddingBottom="@dimen/clg_space_16" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

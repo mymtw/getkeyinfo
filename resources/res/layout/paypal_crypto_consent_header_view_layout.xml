@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/payPal_crypto_terms_and_conditions_header_container" android:background="@drawable/rounded_dialog" android:padding="@dimen/padding_16x" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/white_color"/>

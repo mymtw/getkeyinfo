@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_card_minimal_parent" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/clg_border_radius" app:cardElevation="@dimen/clg_elevation_2">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/minimal_image_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/minimal_image" android:layout_width="0dp" android:layout_height="0dp" android:foreground="@drawable/clg_touch_feedback" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="H,4:3" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.etsy.android.stylekit.views.FavHeartButton android:id="@+id/module_fav_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

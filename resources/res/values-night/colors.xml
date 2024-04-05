@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_3x3_unselected_icon">@color/clg_color_steel</color>
+    <color name="button_3x3_unselected_outline">@color/clg_color_steel</color>
+    <color name="com_braze_content_card_background">#555555</color>
+    <color name="com_braze_content_card_background_border">#555555</color>
+    <color name="com_braze_content_card_background_shadow">#555555</color>
+    <color name="com_braze_content_card_empty_text_color">@android:color/white</color>
+    <color name="com_braze_content_cards_action_hint_text_color">#8ac7ff</color>
+    <color name="com_braze_content_cards_description">@android:color/white</color>
+    <color name="com_braze_content_cards_display_background_color">#1e1e1e</color>
+    <color name="com_braze_content_cards_title">@android:color/white</color>
+    <color name="com_braze_content_cards_unread_bar_color">#8ac7ff</color>
+    <color name="drawer_scrim">#cc000000</color>
+    <color name="inbox_icon_background">@color/clg_color_denim_dark</color>
+    <color name="listing_images_paging_indicator_bg">@color/clg_color_white</color>
+    <color name="listing_images_paging_track_bg">@color/white_transparent_10</color>
+    <color name="listing_nudge_denim">@color/clg_color_denim_light</color>
+    <color name="listing_nudge_lavender">@color/clg_color_lavender_light</color>
+    <color name="message_background_current_user">@color/clg_color_denim_variant</color>
+    <color name="message_background_other_user">@color/clg_color_black</color>
+    <color name="message_link_card_background_current_user">@color/clg_color_denim</color>
+    <color name="message_link_card_background_other_user">@color/clg_color_charcoal</color>
+    <color name="message_stack_banner_background_color">@color/clg_color_denim_dark</color>
+    <color name="navigational_header_tear">@color/clg_color_denim</color>
+    <color name="orange">@color/clg_text_inverse_denim_selector</color>
+    <color name="rating_star_label_text_color">@color/clg_color_denim_light_variant</color>
+    <color name="shop_reviews_bubble_background">@color/clg_color_charcoal</color>
+    <color name="star_seller">@color/clg_color_lavender_tint_variant</color>
+    <color name="webview_loading_background">#a8000000</color>
+</resources>

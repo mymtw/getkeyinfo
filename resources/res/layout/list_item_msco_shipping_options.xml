@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/shipping" style="@style/clg_text_title"/>
+    <View android:id="@+id/clg_radio_button_bottom_divider" android:background="?attr/clg_color_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/clg_space_12" android:importantForAccessibility="no" android:layout_marginStart="@dimen/clg_space_4" android:layout_marginEnd="@dimen/clg_space_4"/>
+    <com.etsy.android.stylekit.views.CollageRadioGroup android:id="@+id/cart_bottom_sheet_shipping_options" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

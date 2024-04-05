@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/clg_space_32" android:paddingEnd="@dimen/clg_space_32">
+    <ImageView android:layout_marginBottom="@dimen/clg_space_32" android:src="@drawable/clg_icon_brand_photography_fill_v2" android:importantForAccessibility="no" style="@style/clg_brand_icon_empty"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_12" android:text="@string/review_filtered_results_none_found" style="@style/clg_text_heading"/>
+    <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_32" android:text="@string/review_filtered_results_clear_filters" style="@style/clg_text_body"/>
+    <Button android:id="@+id/item_reviews_clear_filters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_see_all_reviews" style="@style/clg_button_primary"/>
+</LinearLayout>

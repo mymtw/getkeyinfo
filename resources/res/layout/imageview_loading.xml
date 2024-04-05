@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/clg_touch_feedback">
+    <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/play_video_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/shop_videos_title" android:paddingStart="14sp" android:paddingEnd="10sp" app:srcCompat="@drawable/clg_icon_core_play_v1" style="?attr/clg_button_primary_icon_on_dark"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/activity_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/imageview_loading_indicator"/>
+    </FrameLayout>
+</FrameLayout>

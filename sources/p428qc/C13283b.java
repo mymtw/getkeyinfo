@@ -1,0 +1,15 @@
+package p428qc;
+
+import com.etsy.android.p327ui.navigation.keys.fragmentkeys.HomePagerKey;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import p350fe.C12729e;
+import p350fe.C12730f;
+import p350fe.C12731g;
+
+/* renamed from: qc.b */
+public final class C13283b implements C12729e {
+    /* renamed from: a */
+    public final C12731g mo30554a(C12730f fVar) {
+        return new C12731g.C12733b(new HomePagerKey(fVar.f28050c, fVar.f28051d, false, 4, (DefaultConstructorMarker) null));
+    }
+}

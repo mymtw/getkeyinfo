@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large">
+    <TextView android:textColor="?attr/clg_color_text_secondary" android:ellipsize="end" android:id="@+id/shop_info_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/clg_text_title_small"/>
+    <com.etsy.android.uikit.view.ClickableImageView android:id="@+id/shop_icon" android:layout_width="@dimen/shop_home_main_avatar" android:layout_height="@dimen/shop_home_main_avatar" android:layout_marginTop="@dimen/clg_space_8"/>
+    <TextView android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_4" style="@style/clg_text_title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8">
+        <TextView android:textColor="?attr/clg_color_text_secondary" android:id="@+id/shop_num_transactions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/clg_space_8" style="@style/clg_text_body_small"/>
+        <TextView android:textColor="?attr/clg_color_text_secondary" android:id="@+id/shop_open_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/clg_space_8" style="@style/clg_text_body_small"/>
+    </LinearLayout>
+    <com.etsy.android.stylekit.views.ratings.CollageRatingView android:id="@+id/shop_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_4" app:clg_size="0"/>
+</LinearLayout>

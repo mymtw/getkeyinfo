@@ -1,0 +1,22 @@
+package com.etsy.android.lib.models.apiv3.inappnotifications;
+
+public enum InAppNotificationType {
+    RECOMMENDED_SHOPS_STANDARD,
+    RECOMMENDED_SHOPS_HIGHLIGHTED,
+    THANK_YOU_COUPON,
+    THANK_YOU_COUPON_REMINDER,
+    FAVORITE_SHOPS_PROMO,
+    ONE_FAVORITE_LEFT,
+    COLLECTION_RECS,
+    RFC,
+    ABANDONED_CART_OFFER,
+    FBIS,
+    CLOS,
+    YFNOS,
+    SHOPSALE,
+    NFYFS,
+    FIRST,
+    SYNTHETIC_HEADER,
+    SYNTHETIC_FOOTER,
+    UNKNOWN
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/clg_content_toggle_header" android:background="@drawable/clg_content_toggle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_min="@dimen/tap_target_size_sp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:id="@+id/collapsed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/clg_space_4" style="@style/clg_text_title_large"/>
+        <TextView android:id="@+id/expanded_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/clg_space_4" style="@style/clg_text_title_large"/>
+        <ImageView android:id="@+id/up_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clg_icon_core_navigateup_v1" android:importantForAccessibility="no"/>
+        <ImageView android:id="@+id/down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clg_icon_core_navigatedown_v1" android:importantForAccessibility="no"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/clg_content_toggle_content" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/clg_content_toggle_bottom_divider" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/clg_content_toggle_header"/>
+</merge>

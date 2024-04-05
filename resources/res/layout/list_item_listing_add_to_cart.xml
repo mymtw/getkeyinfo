@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_12">
+    <Button android:id="@+id/button_add_to_cart" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" style="@style/clg_button_secondary"/>
+    <TextSwitcher android:id="@+id/button_add_to_cart_text_switcher" android:layout_width="match_parent" android:layout_height="match_parent" android:inAnimation="@anim/slide_in_top" android:outAnimation="@anim/slide_out_down" app:layout_constraintBottom_toBottomOf="@+id/button_cart_redesign" app:layout_constraintTop_toTopOf="@+id/button_cart_redesign">
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@style/clg_text_title"/>
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@style/clg_text_title"/>
+    </TextSwitcher>
+</FrameLayout>

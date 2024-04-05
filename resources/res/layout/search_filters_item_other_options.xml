@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.stylekit.views.CollageContentToggle xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_toggle_filter_other_options" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.etsy.android.stylekit.views.CollageCheckbox android:id="@+id/checkbox_other_option_0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_direction="1"/>
+    <com.etsy.android.stylekit.views.CollageCheckbox android:id="@+id/checkbox_other_option_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_direction="1"/>
+    <com.etsy.android.stylekit.views.CollageCheckbox android:id="@+id/checkbox_other_option_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_direction="1"/>
+    <com.etsy.android.stylekit.views.CollageCheckbox android:id="@+id/checkbox_other_option_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_direction="1"/>
+</com.etsy.android.stylekit.views.CollageContentToggle>

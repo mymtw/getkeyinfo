@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="https://schemas.android.com/tools" xmlns:aapt="http://schemas.android.com/aapt">
+    <EditTextPreference android:title="API features override" android:key="@string/config_features_override" android:summary="@string/config_api_features_override_summary" app:iconSpaceReserved="false"/>
+    <EditTextPreference android:title="API features date override" android:key="@string/config_features_date_override" android:summary="@string/config_api_features_date_override_summary" app:iconSpaceReserved="false"/>
+    <Preference android:persistent="false" android:title="@string/config_refresh_server_info_title" android:key="@string/config_refresh_server_info" app:iconSpaceReserved="false"/>
+    <Preference android:persistent="false" android:title="@string/qualtrics_force_prompt_title" android:key="@string/qualtrics_force_prompt" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/admin_toolbar_title" android:key="@string/config_prefs_admin_toolbar" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <PreferenceCategory android:title="@string/config_prefs_category_title" app:iconSpaceReserved="false">
+        <ListPreference android:entries="@array/etsy_environments" android:title="@string/config_prefs_environment_title" android:key="@string/config_prefs_environment" android:defaultValue="@string/config_prefs_prod_value" android:entryValues="@array/etsy_environments_values" app:iconSpaceReserved="false"/>
+        <EditTextPreference android:title="@string/config_prefs_vm_title" android:key="@string/config_prefs_vm" app:iconSpaceReserved="false"/>
+        <CheckBoxPreference android:title="@string/config_prefs_dev_proxy_title" android:key="@string/config_prefs_dev_proxy" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_prefs_xdebug_title" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/config_prefs_xdebug_toggle_title" android:key="@string/config_prefs_xdebug_toggle" app:iconSpaceReserved="false"/>
+        <EditTextPreference android:title="@string/config_prefs_xdebug_ide_title" android:key="@string/config_prefs_xdebug_ide" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_section_networking" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/config_output_json_to_logcat" android:key="@string/config_prefs_output_json" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_build_info" app:iconSpaceReserved="false">
+        <Preference android:persistent="false" android:title="@string/config_build_version_title" android:key="@string/config_build_version" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="@string/config_build_date_title" android:key="@string/config_build_date" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="@string/config_build_branch_title" android:key="@string/config_build_branch" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="@string/config_build_hash_title" android:key="@string/config_build_hash" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Logging" app:iconSpaceReserved="false">
+        <Preference android:persistent="false" android:title="@string/logs_send_all" android:key="@string/config_send_all_logs" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="@string/logs_wipe_all" android:key="@string/config_wipe_logs" app:iconSpaceReserved="false"/>
+        <CheckBoxPreference android:title="@string/config_pref_event_horizon_title" android:key="@string/config_prefs_event_horizon" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Location" app:iconSpaceReserved="false">
+        <EditTextPreference android:title="Locale e.g. en_US" android:key="@string/config_locale" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="Clear locale override" android:key="@string/config_locale_clear" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Crash reporting" app:iconSpaceReserved="false">
+        <Preference android:persistent="false" android:title="@string/throw_test_exception" android:key="@string/config_test_crash_reporting" app:iconSpaceReserved="false"/>
+        <Preference android:persistent="false" android:title="@string/trigger_test_anr" android:key="@string/config_test_anr_reporting" android:summary="@string/trigger_test_anr_summary" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

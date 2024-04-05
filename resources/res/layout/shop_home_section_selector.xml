@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/clg_color_bg_primary" android:paddingTop="@dimen/clg_space_16" android:paddingBottom="@dimen/clg_space_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/clg_space_16" android:paddingEnd="@dimen/clg_space_16">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/shop_home_section_selector_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clg_select_layout">
+        <AutoCompleteTextView android:textColorHint="?attr/clg_color_text_tertiary" android:id="@+id/shop_home_section_selector" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/clg_select_text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

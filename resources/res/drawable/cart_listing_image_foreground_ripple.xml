@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cart_listing_image_corner_radius"/>
+            <solid android:color="@android:color/white"/>
+            <size android:height="@dimen/cart_listing_image_size" android:width="@dimen/cart_listing_image_size"/>
+        </shape>
+    </item>
+</ripple>

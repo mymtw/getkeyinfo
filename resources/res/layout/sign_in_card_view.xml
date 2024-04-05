@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/sign_in_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/signin_image" android:layout_marginBottom="@dimen/clg_space_24" android:importantForAccessibility="no" style="@style/clg_brand_icon_empty"/>
+    <TextView android:gravity="center" android:id="@+id/signin_txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/clg_space_36" android:layout_marginEnd="@dimen/clg_space_36" style="@style/clg_text_heading"/>
+    <TextView android:gravity="center" android:id="@+id/signin_txt_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_12" android:layout_marginStart="@dimen/clg_space_36" android:layout_marginEnd="@dimen/clg_space_36" style="@style/clg_text_body"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/signin_btn_link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_24" android:text="@string/sign_in" style="@style/clg_button_primary"/>
+</LinearLayout>

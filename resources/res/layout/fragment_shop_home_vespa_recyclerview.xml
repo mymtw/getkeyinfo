@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <com.etsy.android.stylekit.views.CollageAlert android:id="@+id/shop_home_coupon_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_alertType="1" app:clg_dismissButton="true" app:clg_fullWidth="true"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:paddingLeft="@dimen/card_view_margin" android:paddingRight="@dimen/card_view_margin" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/partial_loading"/>
+    <com.etsy.android.uikit.view.EmptyMessageView android:layout_gravity="center" android:id="@+id/empty_message_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium"/>
+    <com.etsy.android.uikit.view.SignInView android:layout_gravity="center" android:id="@+id/signin_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

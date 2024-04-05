@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_nav_home_selector" android:id="@+id/menu_bottom_nav_home" android:title="@string/nav_home" app:contentDescription="@string/home_tab_desc"/>
+    <item android:icon="@drawable/ic_nav_favorite_selector" android:id="@+id/menu_bottom_nav_favorites" android:title="@string/nav_favorites" app:contentDescription="@string/favorites_tab_desc"/>
+    <item android:icon="@drawable/ic_nav_you_selector" android:id="@+id/menu_bottom_nav_you" android:title="@string/nav_you" app:contentDescription="@string/you_tab_desc"/>
+    <item android:icon="@drawable/ic_nav_cart_selector" android:id="@+id/menu_bottom_nav_cart" android:title="@string/nav_cart" app:contentDescription="@string/cart_tab_desc"/>
+</menu>

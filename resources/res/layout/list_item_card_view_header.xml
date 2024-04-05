@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/clg_space_24" app:cardCornerRadius="@dimen/clg_space_2" app:cardElevation="@dimen/clg_elevation_4">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:id="@+id/title" android:paddingTop="@dimen/clg_space_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center" android:paddingHorizontal="@dimen/clg_space_12" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/subtitle" app:layout_goneMarginTop="@dimen/clg_space_16" style="@style/clg_text_heading"/>
+        <TextView android:id="@+id/subtitle" android:padding="@dimen/clg_space_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center" style="@style/clg_text_body_small"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

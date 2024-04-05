@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="vespa_listing_card_3x3_span">@integer/vespa_grid_item_sixth_span</integer>
+</resources>

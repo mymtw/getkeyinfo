@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.paypal.pyplcheckout.home.view.customviews.LinkTextView android:textSize="@dimen/text_size_14" android:id="@+id/ba_terms_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_16x" android:layout_marginEnd="@dimen/margin_16x" style="@style/PYPLTextViewCaption1Style"/>
+</merge>

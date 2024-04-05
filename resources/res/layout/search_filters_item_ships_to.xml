@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.stylekit.views.CollageContentToggle xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_toggle_ships_to" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_titleText="@string/ship_to">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/text_country" android:padding="@dimen/clg_space_16" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/button_update" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clg_text_body"/>
+        <Button android:id="@+id/button_update" android:padding="@dimen/clg_space_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/text_country" app:layout_constraintTop_toTopOf="0" style="@style/clg_button_tertiary_transparent_small_flush_margins"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.etsy.android.stylekit.views.CollageContentToggle>

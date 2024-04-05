@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/clg_space_16" android:paddingBottom="@dimen/clg_space_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/clg_space_8" android:paddingEnd="@dimen/clg_space_16">
+    <com.etsy.android.stylekit.views.CollageSelectDropdown android:id="@+id/shop_section_listings_sort" android:layout_width="match_parent" android:layout_height="wrap_content" app:labelText="@string/shop_sort_picker"/>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/$clg_radio_button_selector__0"/>
+    <item android:state_checked="false" android:id="@+id/unchecked" android:drawable="@drawable/$clg_radio_button_selector__1"/>
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/$clg_radio_button_selector__2"/>
+    <item android:state_checked="true" android:id="@+id/checked" android:drawable="@drawable/$clg_radio_button_selector__3">
+        <shape android:shape="oval">
+            <stroke android:width="9dp" android:color="?attr/clg_color_interaction_enabled_selected"/>
+            <size android:height="@dimen/interactive_element_size" android:width="@dimen/interactive_element_size"/>
+        </shape>
+    </item>
+    <transition android:drawable="@drawable/clg_radiobutton_toggle_unchecked_checked" android:toId="@+id/checked" android:fromId="@+id/unchecked"/>
+    <transition android:drawable="@drawable/clg_radiobutton_toggle_checked_unchecked" android:toId="@+id/unchecked" android:fromId="@+id/checked"/>
+</animated-selector>

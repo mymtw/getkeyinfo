@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/rippleOnInverseSurface">
+    <item android:id="@android:id/mask">
+        <inset android:insetLeft="2sp" android:insetRight="2sp" android:insetTop="8sp" android:insetBottom="8sp">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/clg_button_cap_radius"/>
+                <solid android:color="@color/clg_color_bubblegum"/>
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <inset android:insetTop="6sp" android:insetBottom="6sp">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/clg_button_cap_radius"/>
+                <stroke android:width="2sp" android:color="?attr/clg_color_interaction_button_inverse"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>

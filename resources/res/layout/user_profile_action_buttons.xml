@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/clg_space_8">
+    <Button android:id="@+id/follow_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" app:icon="@drawable/clg_icon_core_add_v1" style="@style/clg_button_secondary_small"/>
+    <Button android:id="@+id/message_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_button" app:icon="@drawable/clg_icon_core_message_v1" style="@style/clg_button_secondary_small"/>
+</LinearLayout>

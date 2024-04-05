@@ -1,0 +1,20 @@
+package kotlinx.coroutines.flow;
+
+import kotlin.coroutines.C19340c;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+
+public final class FlowKt__TransformKt$filterNot$$inlined$unsafeTransform$1$1 extends ContinuationImpl {
+    public int label;
+    public /* synthetic */ Object result;
+    public final /* synthetic */ C19691y0 this$0;
+
+    public FlowKt__TransformKt$filterNot$$inlined$unsafeTransform$1$1(C19691y0 y0Var, C19340c cVar) {
+        super(cVar);
+    }
+
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        throw null;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/pillLayout" android:background="@drawable/bg_pill_grey_outline_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp">
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_marginStart="@dimen/recent_search_padding"/>
+        <ImageView android:id="@+id/recentSearchIcon" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/clg_icon_core_search_v1" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/text_large" android:ellipsize="end" android:gravity="center" android:id="@+id/recentSearch" android:paddingBottom="@dimen/related_tag_center_offset" android:layout_width="wrap_content" android:layout_height="@dimen/recent_search_height" android:maxLines="1" android:paddingStart="@dimen/pill_left_padding" android:paddingEnd="@dimen/clg_space_24" style="@style/CardRecyclerSectionHeaderTitle"/>
+    </LinearLayout>
+</FrameLayout>

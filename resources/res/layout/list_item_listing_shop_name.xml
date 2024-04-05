@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/clg_space_4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/listing_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/clg_space_8" style="@style/clg_text_body_small"/>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/shop_header_name" app:layout_constraintTop_toTopOf="@+id/shop_header_name" layout="@layout/star_seller_badge"/>
+</LinearLayout>

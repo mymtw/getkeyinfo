@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="61700036" android:versionName="6.17.0" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.etsy.android" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33"/>
+    <permission android:name="com.etsy.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.etsy.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <instrumentation android:name=".EtsyTestRunner" android:targetPackage="com.etsy.android"/>
+    <queries>
+        <package android:name="com.etsy.android.soe"/>
+        <package android:name="com.etsy.android.soe.alpha"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <application android:theme="@style/Theme.Etsy" android:label="@string/etsy" android:icon="@mipmap/ic_launcher" android:name="com.etsy.android.BOEApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="false" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <provider android:name="com.etsy.android.contentproviders.EtsyProvider" android:exported="false" android:authorities="com.etsy.android.contentproviders.EtsyProvider"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.etsy.android.contentproviders.FileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:name="com.etsy.android.slice.PurchasesSliceProvider" android:enabled="true" android:exported="true" android:authorities="com.etsy.android.purchases">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.app.slice.category.SLICE"/>
+            </intent-filter>
+        </provider>
+        <receiver android:name="com.qualtrics.digital.QualtricsNotificationManager" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Dialog" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="97759090edfe7f8722f1baaa63dceb8a"/>
+        <meta-data android:name="com.usebutton.applicationid" android:value="app-1afabbaf4599120d"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/firebase_default_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/firebase_default_color"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="DEFAULT_ETSY_CHANNEL_ID"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <activity android:theme="@style/Theme.Etsy.Splash" android:label="@string/etsy" android:name="com.etsy.android.p327ui.homescreen.HomescreenTabsActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.etsy.android.p327ui.search.p330v2.interstitial.SearchInterstitialActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:value=".ui.search.v2.interstitial.SearchInterstitialActivity" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.FullScreen.BlackBg" android:name="com.etsy.android.p327ui.core.ShopAboutVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.p327ui.user.auth.SignInActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.deeplinking.bitly.BitlyActivity" android:exported="true" android:finishOnTaskLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter android:autoVerify="true">
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http" android:host="etsy.me"/>
+                <data android:scheme="https" android:host="etsy.me"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Etsy.Splash" android:name="com.etsy.android.p327ui.nav.NotificationActivity" android:exported="true" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="etsy"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="etsy.app.link"/>
+                <data android:scheme="https" android:host="etsy-alternate.app.link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="etsy.com"/>
+                <data android:host="www.etsy.com"/>
+                <data android:pathPattern="/listing/.*"/>
+                <data android:pathPattern="/../listing/.*"/>
+                <data android:pathPattern="/..-../listing/.*"/>
+                <data android:pathPattern="/updates"/>
+                <data android:pathPattern="/updates/.*"/>
+                <data android:pathPattern="/../updates/.*"/>
+                <data android:pathPattern="/..-../updates/.*"/>
+                <data android:pathPattern="/people/.*"/>
+                <data android:pathPattern="/../people/.*"/>
+                <data android:pathPattern="/..-../people/.*"/>
+                <data android:pathPattern="/shop/.*"/>
+                <data android:pathPattern="/../shop/.*"/>
+                <data android:pathPattern="/..-../shop/.*"/>
+                <data android:pathPattern="/browse/.*"/>
+                <data android:pathPattern="/../browse/.*"/>
+                <data android:pathPattern="/..-../browse/.*"/>
+                <data android:pathPattern="/browse"/>
+                <data android:pathPattern="/../browse"/>
+                <data android:pathPattern="/..-../browse"/>
+                <data android:pathPattern="/search"/>
+                <data android:pathPattern="/search/"/>
+                <data android:pathPattern="/search/.*"/>
+                <data android:pathPattern="/../search"/>
+                <data android:pathPattern="/../search/"/>
+                <data android:pathPattern="/../search/.*"/>
+                <data android:pathPattern="/..-../search"/>
+                <data android:pathPattern="/..-../search/"/>
+                <data android:pathPattern="/..-../search/.*"/>
+                <data android:pathPattern="/c/.*"/>
+                <data android:pathPattern="/../c/.*"/>
+                <data android:pathPattern="/..-../c/.*"/>
+                <data android:pathPattern="/market/.*"/>
+                <data android:pathPattern="/../market/.*"/>
+                <data android:pathPattern="/..-../market/.*"/>
+                <data android:pathPattern="/cart"/>
+                <data android:pathPattern="/promoted-offers/.*"/>
+                <data android:pathPattern="/conversations/.*"/>
+                <data android:pathPattern="/../conversations/.*"/>
+                <data android:pathPattern="/..-../conversations/.*"/>
+                <data android:pathPattern="/conversations"/>
+                <data android:pathPattern="/../conversations"/>
+                <data android:pathPattern="/..-../conversations"/>
+                <data android:pathPattern="/your/purchases"/>
+                <data android:pathPattern="/../your/purchases"/>
+                <data android:pathPattern="/..-../your/purchases"/>
+                <data android:pathPattern="/your/purchases/.*/review/.*"/>
+                <data android:pathPattern="/../your/purchases/.*/review/.*"/>
+                <data android:pathPattern="/..-../your/purchases/.*/review/.*"/>
+                <data android:pathPattern="/your/orders/.*/order_tracking/.*"/>
+                <data android:pathPattern="/../your/orders/.*/order_tracking/.*"/>
+                <data android:pathPattern="/..-../your/orders/.*/order_tracking/.*"/>
+                <data android:pathPattern="/your/purchases/.*"/>
+                <data android:pathPattern="/../your/purchases/.*"/>
+                <data android:pathPattern="/..-../your/purchases/.*"/>
+                <data android:pathPattern="/transaction/.*/buyer-photo"/>
+                <data android:pathPattern="/../transaction/.*/buyer-photo"/>
+                <data android:pathPattern="/..-../transaction/.*/buyer-photo"/>
+                <data android:pathPattern="/transaction/.*"/>
+                <data android:pathPattern="/../transaction/.*"/>
+                <data android:pathPattern="/..-../transaction/.*"/>
+                <data android:pathPattern="/featured/.*"/>
+                <data android:pathPattern="/../featured/.*"/>
+                <data android:pathPattern="/..-../featured/.*"/>
+                <data android:pathPattern="/buyonetsy/cart"/>
+                <data android:pathPattern="/../buyonetsy/cart"/>
+                <data android:pathPattern="/..-../buyonetsy/cart"/>
+                <data android:pathPattern="/buyonetsy/people/.*"/>
+                <data android:pathPattern="/../buyonetsy/people/.*"/>
+                <data android:pathPattern="/..-../buyonetsy/people/.*"/>
+                <data android:pathPattern="/buyonetsy/conversations/.*"/>
+                <data android:pathPattern="/../buyonetsy/conversations/.*"/>
+                <data android:pathPattern="/..-../buyonetsy/conversations/.*"/>
+                <data android:pathPattern="/buyonetsy/conversations"/>
+                <data android:pathPattern="/../buyonetsy/conversations"/>
+                <data android:pathPattern="/..-../buyonetsy/conversations"/>
+                <data android:pathPattern="/buyonetsy/shop/.*"/>
+                <data android:pathPattern="/../buyonetsy/shop/.*"/>
+                <data android:pathPattern="/..-../buyonetsy/shop/.*"/>
+                <data android:pathPattern="/signin/etsyapps/magic/.*"/>
+                <data android:pathPattern="/cfg/.*"/>
+                <data android:pathPattern="/../"/>
+                <data android:pathPattern="/.."/>
+                <data android:pathPattern="/..-../"/>
+                <data android:pathPattern="/..-.."/>
+                <data android:path="/"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="https"/>
+                <data android:host="etsy.bttn.io"/>
+                <data android:pathPattern=".*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="alias.ImageShare" android:exported="true" android:targetActivity="com.etsy.android.ui.nav.NotificationActivity">
+            <intent-filter android:label="@string/etsy_lens_share_target_label">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.etsy.android.p327ui.cart.CartShortcutActivity" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true"/>
+        <activity android:name="com.etsy.android.p327ui.user.purchases.PurchasesShortcutActivity" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true"/>
+        <activity android:name="com.etsy.android.p327ui.favorites.FavoritesShortcutActivity" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true"/>
+        <activity android:name="com.etsy.android.p327ui.EtsyPreferenceActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.Transparent" android:name="com.etsy.android.p327ui.dialog.TextInfoActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Etsy.DialogActivity" android:name="com.etsy.android.p327ui.core.listingnomapper.TextDialogActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.etsy.android.p327ui.user.review.CreateReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.etsy.android.p327ui.BOEActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <receiver android:name="com.etsy.android.lib.toolbar.RecreateReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.etsy.android.share.SocialShareBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/analytics_global"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDiMb-AqUoRJbm2rlfwMCXoGOSCJwWONFA"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_api_key"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="@string/branch_api_test_key"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <receiver android:name="com.etsy.android.device.LocaleReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.qualtrics.digital.QualtricsSurveyActivity"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.qualtrics.digital.QualtricsPopOverActivity"/>
+        <meta-data android:name="com.google.android.actions" android:resource="@xml/actions"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <service android:name="com.etsy.android.lib.push.handler.FirebasePushService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.etsy.android.lib.network.oauth2.signin.SignInContainerActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:name="com.etsy.android.lib.util.CrossProcessSharedPreferences$Receiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_STRING"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_INT"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_LONG"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_FLOAT"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.PUT_BOOLEAN"/>
+                <action android:name="com.etsy.android.crossprocesssharedpref.REMOVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.etsy.android.lib.push.handler.BrazeReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.braze.push.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="com.braze.push.intent.NOTIFICATION_OPENED"/>
+                <action android:name="com.braze.push.intent.NOTIFICATION_DELETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbconnect" android:host="cct.com.etsy.android"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PYPLAppTheme" android:name="com.paypal.pyplcheckout.home.view.activities.PYPLHomeActivity" android:exported="false" android:taskAffinity="com.pyplcheckout.task" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppFullScreenTheme" android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="com.etsy.android" android:host="paypalxo"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PYPLAppTheme" android:name="com.paypal.openid.RedirectUriReceiverActivity" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="nativexo" android:host="paypalpay"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PYPLAppTheme" android:name="com.paypal.pyplcheckout.threeds.ThreeDS20Activity" android:exported="false" android:taskAffinity="com.pyplcheckout.threeds" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity" android:exported="true" android:taskAffinity="" android:multiprocess="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.paypal.authcore.authentication.TokenActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.paypal.openid.AuthorizationManagementActivity" android:exported="false" android:launchMode="singleTask"/>
+        <activity android:name="androidx.compose.p015ui.tooling.PreviewActivity" android:exported="true"/>
+        <activity android:name="com.appboy.p043ui.AppboyWebViewActivity" android:exported="false"/>
+        <activity android:name="com.braze.p044ui.BrazeWebViewActivity" android:exported="false"/>
+        <activity android:name="com.appboy.p043ui.activities.AppboyFeedActivity" android:exported="false"/>
+        <activity android:name="com.appboy.p043ui.activities.AppboyContentCardsActivity" android:exported="false"/>
+        <activity android:name="com.braze.p044ui.activities.ContentCardsActivity" android:exported="false"/>
+        <activity android:theme="@style/Braze.PushTrampoline.Transparent" android:name="com.braze.push.NotificationTrampolineActivity" android:exported="false" android:launchMode="singleInstance"/>
+        <receiver android:name="com.braze.push.BrazePushReceiver" android:exported="false"/>
+        <receiver android:name="com.braze.receivers.BrazeActionReceiver" android:exported="false"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:name="com.google.firebase.perf.provider.FirebasePerfProvider" android:exported="false" android:authorities="com.etsy.android.firebaseperfprovider" android:initOrder="101"/>
+        <activity android:name="androidx.slice.compat.SlicePermissionActivity" android:excludeFromRecents="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.etsy.android.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.etsy.android.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.etsy.android.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <service android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" android:enabled="false" android:exported="false"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.etsy.android.com.squareup.picasso"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.cardinalcommerce.shared.p065cs.utils.CCInitProvider" android:enabled="true" android:exported="false" android:authorities="com.etsy.android.CCInitProvider"/>
+        <activity android:theme="@style/CardinalSDKTheme.ActionBar" android:name="com.cardinalcommerce.shared.p065cs.userinterfaces.ChallengeHTMLView"/>
+        <activity android:theme="@style/CardinalSDKTheme.ActionBar" android:name="com.cardinalcommerce.shared.p065cs.userinterfaces.ChallengeNativeView" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="a5a9839b-acfb-48b8-944c-522b2d8f5ded"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

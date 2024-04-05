@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_matte" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/clg_elevation_4" app:cardElevation="@dimen/clg_elevation_4" style="@style/CardViewElementStyle">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <FrameLayout android:id="@+id/listing_image_region" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.etsy.android.uikit.view.ListingFullImageView android:id="@+id/listing_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="false" android:contentDescription="@string/listing_image_content_description"/>
+            <com.etsy.android.stylekit.views.FavHeartButton android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/favorite_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/listing_details" android:padding="@dimen/clg_space_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:ellipsize="end" android:id="@+id/listing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_4" android:maxLines="2" style="@style/clg_text_body_small"/>
+            <TextView android:id="@+id/listing_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_4" android:singleLine="true" android:contentDescription="@null" style="@style/clg_text_title_small"/>
+            <TextView android:ellipsize="end" android:id="@+id/listing_availability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_4" android:maxLines="1" style="@style/clg_text_body_small"/>
+            <TextView android:ellipsize="end" android:id="@+id/listing_shop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/clg_text_title_small"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_2">
+                <TextView android:textStyle="bold" android:id="@+id/shop_numeric_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingEnd="@dimen/clg_space_4" app:layout_constraintBaseline_toBaselineOf="@+id/rating" app:layout_constraintEnd_toStartOf="@+id/rating" app:layout_constraintStart_toStartOf="0" style="@style/clg_text_body_small"/>
+                <com.etsy.android.stylekit.views.ratings.CollageRatingView android:ellipsize="end" android:id="@+id/rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:clg_size="0" app:layout_constraintStart_toEndOf="@+id/shop_numeric_rating" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.etsy.android.uikit.p331ui.core.NumericRatingView android:id="@+id/anchor_listing_numeric_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

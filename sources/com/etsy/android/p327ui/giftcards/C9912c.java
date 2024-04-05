@@ -1,0 +1,14 @@
+package com.etsy.android.p327ui.giftcards;
+
+import com.etsy.android.p327ui.navigation.keys.fragmentkeys.CreateGiftCardKey;
+import p350fe.C12729e;
+import p350fe.C12730f;
+import p350fe.C12731g;
+
+/* renamed from: com.etsy.android.ui.giftcards.c */
+public final class C9912c implements C12729e {
+    /* renamed from: a */
+    public final C12731g mo30554a(C12730f fVar) {
+        return new C12731g.C12733b(new CreateGiftCardKey(fVar.f28050c, fVar.f28051d));
+    }
+}

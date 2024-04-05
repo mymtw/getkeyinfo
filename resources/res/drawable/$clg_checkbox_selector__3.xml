@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/interactive_element_size" android:width="@dimen/interactive_element_size" android:viewportWidth="60" android:viewportHeight="60">
+    <path android:name="background" android:fillColor="?attr/clg_color_interaction_enabled_selected" android:pathData="M10 0l 42 0a8 8 0 0 1 8 8l 0 44a8 8 0 0 1 -8 8l -44 0a8 8 0 0 1 -8 -8l 0 -44a8 8 0 0 1 8 -8z"/>
+    <group android:name="checkmark" android:pivotX="30" android:pivotY="30" android:translateX="6" android:translateY="6">
+        <path android:fillColor="?attr/colorSurface" android:pathData="M18.114,40.942L 4.586,27.414a 2 2 0 0,2 2.828 -2.828l 10.472,10.472, 22.6 -26.36a 2 2 0 2 2 3.036 2.6Z"/>
+    </group>
+</vector>

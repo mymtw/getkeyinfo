@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/nudge_panel" android:background="@drawable/bg_listing_nudge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/nudge_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_4" style="@style/clg_text_title_small"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/nudge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clg_text_body_small"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/nudge_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/clg_space_48" android:minHeight="@dimen/clg_space_48" android:importantForAccessibility="no"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/nudge_lottie" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minWidth="@dimen/clg_space_48" android:minHeight="@dimen/clg_space_48" android:importantForAccessibility="no" app:lottie_autoPlay="false" app:lottie_loop="false"/>
+</merge>

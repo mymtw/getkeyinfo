@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/card_view_margin" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@+id/sticky_header" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/related_categories_header" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_8" app:cardCornerRadius="0dp" app:cardElevation="@dimen/clg_elevation_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/sticky_header">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/related_categories_recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/partial_new_search_empty_results"/>
+    <include layout="@layout/partial_loading"/>
+    <include layout="@layout/partial_no_internet"/>
+    <include android:id="@+id/saveSearchTooltip" android:visibility="gone" layout="@layout/save_search_tooltip"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <action intentName="actions.intent.GET_PRODUCT">
+        <fulfillment urlTemplate="etsy://search{?q}">
+            <parameter-mapping intentParameter="product.description" required="true" urlParameter="q"/>
+        </fulfillment>
+        <fulfillment urlTemplate="etsy://home"/>
+    </action>
+    <action intentName="actions.intent.GET_CART">
+        <fulfillment urlTemplate="etsy://cart"/>
+    </action>
+    <action intentName="actions.intent.OPEN_APP_FEATURE">
+        <fulfillment urlTemplate="{@url}"/>
+        <fulfillment urlTemplate="etsy://{feature}">
+            <parameter-mapping entityMatchRequired="true" intentParameter="feature" urlParameter="feature"/>
+        </fulfillment>
+        <parameter name="feature">
+            <entity-set-reference entitySetId="FeatureEntitySet"/>
+        </parameter>
+        <entity-set entitySetId="FeatureEntitySet">
+            <entity name="@string/my_favorites" url="etsy://favorites"/>
+        </entity-set>
+    </action>
+    <action intentName="actions.intent.GET_ORDER">
+        <fulfillment fulfillmentMode="actions.fulfillment.SLICE" urlTemplate="content://com.etsy.android.purchases/recentPurchase?from_google_app_action=true"/>
+    </action>
+    <action intentName="actions.intent.GET_THING">
+        <fulfillment urlTemplate="etsy://search{?q}">
+            <parameter-mapping intentParameter="thing.name" required="true" urlParameter="q"/>
+        </fulfillment>
+        <fulfillment urlTemplate="etsy://home"/>
+    </action>
+    <action intentName="actions.intent.UPDATE_CART">
+        <fulfillment urlTemplate="etsy://cart"/>
+    </action>
+</actions>

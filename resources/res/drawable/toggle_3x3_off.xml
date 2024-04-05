@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="48dp" android:width="96dp" android:viewportWidth="94" android:viewportHeight="48">
+    <path android:pathData="M46.5,0.5H91C92.3807,0.5 93.5,1.6193 93.5,3V45C93.5,46.3807 92.3807,47.5 91,47.5H46.5V0.5Z" android:strokeColor="@color/button_3x3_unselected_outline" android:strokeWidth="1"/>
+    <path android:pathData="M0.5,3C0.5,1.6193 1.6193,0.5 3,0.5H46.4565V47.5H3C1.6193,47.5 0.5,46.3807 0.5,45V3Z" android:strokeColor="?attr/clg_color_interaction_enabled_selected" android:strokeWidth="1"/>
+    <path android:fillColor="?attr/clg_color_interaction_enabled_selected" android:pathData="M15,16h7v7h-7z"/>
+    <path android:fillColor="?attr/clg_color_interaction_enabled_selected" android:pathData="M24,16h7v7h-7z"/>
+    <path android:fillColor="?attr/clg_color_interaction_enabled_selected" android:pathData="M15,25h7v7h-7z"/>
+    <path android:fillColor="?attr/clg_color_interaction_enabled_selected" android:pathData="M24,25h7v7h-7z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M62,28h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M68,28h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M74,28h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M62,22h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M68,22h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M74,22h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M62,16h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M68,16h4v4h-4z"/>
+    <path android:fillColor="@color/button_3x3_unselected_icon" android:pathData="M74,16h4v4h-4z"/>
+</vector>

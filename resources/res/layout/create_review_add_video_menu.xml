@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/clg_space_24" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.etsy.android.stylekit.views.CollageListItem android:id="@+id/take_video_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_icon="@drawable/clg_icon_core_camera_v1"/>
+    <com.etsy.android.stylekit.views.CollageListItem android:id="@+id/select_video_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_icon="@drawable/clg_icon_core_image_v1"/>
+    <com.etsy.android.stylekit.views.CollageListItem android:id="@+id/delete_video_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_icon="@drawable/clg_icon_core_trash_v1"/>
+</LinearLayout>

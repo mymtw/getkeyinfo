@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.p327ui.search.SearchResultsFilterHeaderView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sticky_header" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="@dimen/clg_elevation_2" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>

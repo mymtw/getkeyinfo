@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/clg_image_upload" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="?attr/clg_attached_image_content_description"/>
+        <Button android:layout_gravity="end" android:id="@+id/clg_image_upload_remove_button" android:layout_width="44dp" android:layout_height="44dp" android:contentDescription="?attr/clg_remove_image_content_description" app:icon="@drawable/clg_icon_core_close_v1" style="@style/clg_button_smallest_over_image"/>
+        <com.etsy.android.stylekit.views.LoadingIndicatorView android:layout_gravity="center" android:id="@+id/clg_image_upload_loading_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <HorizontalScrollView android:id="@+id/sort_filter_list" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/sort_filter_count_msg" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/clg_space_8" android:paddingBottom="@dimen/clg_space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/clg_space_16" android:paddingEnd="@dimen/clg_space_16">
+            <Button android:id="@+id/review_sort_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_order_recommended" android:layout_marginEnd="@dimen/clg_space_8" app:icon="@drawable/clg_icon_core_sort_v1" app:iconTint="?attr/clg_color_text_primary"/>
+            <Button android:id="@+id/review_filter_with_photos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_filter_with_photos" android:layout_marginEnd="@dimen/clg_space_8"/>
+            <Button android:id="@+id/review_filter_with_videos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_filter_with_videos" android:contentDescription="@string/review_filter_with_videos" android:layout_marginEnd="@dimen/clg_space_8"/>
+            <Button android:id="@+id/review_filter_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating"/>
+            <com.google.android.material.chip.Chip android:id="@+id/review_filter_rating_removable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clg_actiongroup_removable_small"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:id="@+id/sort_filter_count_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_4" android:layout_marginStart="@dimen/clg_space_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/sort_filter_list" style="@style/clg_text_body_small"/>
+</merge>

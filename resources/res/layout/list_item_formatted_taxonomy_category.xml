@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@+id/listing_matte" android:layout_width="0dp" android:layout_height="0dp" app:cardBackgroundColor="?attr/clg_color_bg_primary" app:cardCornerRadius="@dimen/clg_space_8" app:cardElevation="0dp" app:layout_constraintDimensionRatio="H,1:1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/foreground_radial_ripple_gradient">
+            <ImageView android:id="@+id/category_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no"/>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:layout_gravity="center" android:id="@+id/text_out_image" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_2" android:fontFamily="@font/clg_typeface_bold" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/listing_matte" app:layout_constraintStart_toStartOf="@+id/listing_matte" app:layout_constraintTop_toBottomOf="@+id/listing_matte" app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

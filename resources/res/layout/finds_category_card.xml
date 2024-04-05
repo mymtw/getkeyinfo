@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_matte" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyFindsCardViewStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.ImageViewWithAspectRatio android:id="@+id/listing_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:heightRatio="1"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_8" android:layout_marginStart="@dimen/clg_space_8" android:layout_marginEnd="@dimen/clg_space_8" style="@style/clg_text_heading"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

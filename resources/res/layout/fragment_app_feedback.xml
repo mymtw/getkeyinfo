@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.p327ui.feedback.AppFeedbackView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/screen_feedback" android:padding="@dimen/clg_space_8" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/clg_space_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/feedback_border_box" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GenericSingleInputTextBorder">
+            <TextView android:textSize="@dimen/sk_text_body_smaller" android:paddingLeft="@dimen/clg_space_4" android:paddingRight="@dimen/clg_space_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message"/>
+            <EditText android:id="@+id/edittext_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:minEms="@integer/edit_number_default_min_chars" android:inputType="textMultiLine" android:imeOptions="actionDone" style="@style/GenericSingleInputTextView"/>
+        </LinearLayout>
+        <TextView android:textColor="?attr/clg_color_text_error" android:gravity="center_horizontal" android:id="@+id/error_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" style="@style/clg_text_body"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" android:text="@string/feedback_appreciated"/>
+    </LinearLayout>
+</com.etsy.android.p327ui.feedback.AppFeedbackView>

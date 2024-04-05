@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mosaic_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:id="@+id/card" android:visibility="visible" android:layout_width="match_parent" android:layout_height="96dp" app:cardBackgroundColor="?attr/clg_color_bg_primary" app:cardCornerRadius="@dimen/clg_space_8" app:cardElevation="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/empty_generic" android:scaleType="centerCrop" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="#ffffff" android:ellipsize="end" android:gravity="bottom" android:id="@+id/title" android:background="@drawable/foreground_gradient" android:padding="@dimen/clg_space_8" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/mosaic_content_short_mid_height" android:maxLines="4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="1" style="@style/clg_text_title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

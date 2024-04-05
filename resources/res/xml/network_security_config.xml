@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="https://schemas.android.com/tools" xmlns:aapt="http://schemas.android.com/aapt">
+    <domain-config>
+        <domain includeSubdomains="true">Amazon Trust Services
+        </domain>
+        <pin digest="SHA-256">++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=
+        </pin>
+        <pin digest="SHA-256">f0KW/FtqTjs108NpYj42SrGvOB2PpxIVM8nWxjPqJGE=
+        </pin>
+        <pin digest="SHA-256">NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=
+        </pin>
+        <pin digest="SHA-256">9+ze1cZgR9KO1kZrVDxA4HQ6voHRCSVNz4RdTCx4U8U=
+        </pin>
+        <pin digest="SHA-256">KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Asseco Data Systems S.A. (previously Unizeto Certum) 
+        </domain>
+        <pin digest="SHA-256">lzasOyXRbEWkVBipZFeBVkgKjMQ0VB3cXdWSMyKYaN4=
+        </pin>
+        <pin digest="SHA-256">qiYwp7YXsE0KKUureoyqpQFubb5gSDeoOoVxn6tmfrU=
+        </pin>
+        <pin digest="SHA-256">aztX6eyI0bs9AWN/8zx2mLPJdYJV6fAeqRePPn87K1I=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">DigiCert
+        </domain>
+        <pin digest="SHA-256">foeCwVDOOVL4AuY2AjpdPpW7XWjjPoWtsroXgSXOvxU=
+        </pin>
+        <pin digest="SHA-256">I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o=
+        </pin>
+        <pin digest="SHA-256">8ca6Zwz8iOTfUpc8rkIPCgid1HQUT+WAbEIAZOFZEik=
+        </pin>
+        <pin digest="SHA-256">Fe7TOVlLME+M+Ee0dzcdjW/sYfTbKwGvWJ58U7Ncrkw=
+        </pin>
+        <pin digest="SHA-256">r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=
+        </pin>
+        <pin digest="SHA-256">i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY=
+        </pin>
+        <pin digest="SHA-256">uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc=
+        </pin>
+        <pin digest="SHA-256">WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
+        </pin>
+        <pin digest="SHA-256">Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw=
+        </pin>
+        <pin digest="SHA-256">0vkaBOOmHU6teEjI1DteEVLYhXJ0ibxlc4tnwKInhac=
+        </pin>
+        <pin digest="SHA-256">ryB8Yf2cfPksKv6BVCgtw/LL8y91zRcoFMUrA7frwlg=
+        </pin>
+        <pin digest="SHA-256">IgduWu9Eu5pBaii30cRDItcFn2D+/6XK9sW+hEeJEwM=
+        </pin>
+        <pin digest="SHA-256">cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Entrust
+        </domain>
+        <pin digest="SHA-256">bEZLmlsjOl6HTadlwm8EUBDS3c/0V5TwtMfkqvpQFJU=
+        </pin>
+        <pin digest="SHA-256">lAcq0/WPcPkwmOWl9sBMlscQvYSdgxhJGa6Q64kK5AA=
+        </pin>
+        <pin digest="SHA-256">x/Q7TPW3FWgpT4IrU3YmBfbd0Vyt7Oc56eLDy6YenWc=
+        </pin>
+        <pin digest="SHA-256">MhmwkRT/SVo+tusAwu/qs0ACrl8KVsdnnqCHo/oDfk8=
+        </pin>
+        <pin digest="SHA-256">bb+uANN7nNc/j7R95lkXrwDg3d9C286sIMF8AnXuIJU=
+        </pin>
+        <pin digest="SHA-256">/qK31kX7pz11PB7Jp4cMQOH3sMVh6Se5hb9xGGbjbyI=
+        </pin>
+        <pin digest="SHA-256">du6FkDdMcVQ3u8prumAo6t3i3G27uMP2EOhR8R0at/U=
+        </pin>
+        <pin digest="SHA-256">NtfHnz0Img/3mXLZCSPepcp2tMy698J1HLFS6UlPUtA=
+        </pin>
+        <pin digest="SHA-256">HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">GlobalSign nv-sa
+        </domain>
+        <pin digest="SHA-256">cGuxAXyFXFkWm61cF4HPWX8S0srS9j0aSqN0k4AP+4A=
+        </pin>
+        <pin digest="SHA-256">aCdH+LpiG4fN07wpXtXKvOciocDANj0daLOJKNJ4fx4=
+        </pin>
+        <pin digest="SHA-256">fg6tdrtoGdwvVFEahDVPboswe53YIFjqbABPAdndpd8=
+        </pin>
+        <pin digest="SHA-256">K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q=
+        </pin>
+        <pin digest="SHA-256">4EoCLOMvTM8sf2BGKHuCijKpCfXnUUR/g/0scfb9gXM=
+        </pin>
+        <pin digest="SHA-256">rn+WLLnmp9v3uDP7GPqbcaiRdd+UnCMrap73yz3yu/w=
+        </pin>
+        <pin digest="SHA-256">Nf9rT12ikQ+Ofm1YNADtjHzm/IWSTiXXTr0nwx7nrAs=
+        </pin>
+        <pin digest="SHA-256">MhY4wxAbP/w28oDwljGF/BbTE/KpLKvtK8H6FvscqjE=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">GoDaddy
+        </domain>
+        <pin digest="SHA-256">VjLZe/p3W/PJnd6lL8JVNBCGQBZynFLdZSTIqcO0SJ8=
+        </pin>
+        <pin digest="SHA-256">Ko8tivDrEjiY90yGasP6ZpBU4jwXvHqVvQI0GS3GNdA=
+        </pin>
+        <pin digest="SHA-256">FfFKxFycfaIz00eRZOgTf+Ne4POK6FgYPwhBDqgqxLQ=
+        </pin>
+        <pin digest="SHA-256">gI1os/q0iEpflxrOfRBVDXqVoWN3Tz7Dav/7IT++THQ=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">IdenTrust Services, LLC
+        </domain>
+        <pin digest="SHA-256">Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys=
+        </pin>
+        <pin digest="SHA-256">B+hU8mp8vTiZJ6oEG/7xts0h3RQ4GK2UfcZVqeWH/og=
+        </pin>
+        <pin digest="SHA-256">WN1h/rNup9JYckNxcJFJyxITN4ZMrLLQmZrSBznQZHc=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Internet Security Research Group
+        </domain>
+        <pin digest="SHA-256">C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Microsoft Corporation
+        </domain>
+        <pin digest="SHA-256">NfU84SZGEeAzQP434ex9TMmGxWE9ynD9BKpEVF8tryg=
+        </pin>
+        <pin digest="SHA-256">svcpi1K/LDysTd/nLeTWgqxYlXWVmC8rYjAa9ZfGmcU=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">OISTE
+        </domain>
+        <pin digest="SHA-256">ziTrBibe/YFoyWp3AfCTAWAP5d0NvOWOnJe4MK8C7yg=
+        </pin>
+        <pin digest="SHA-256">FJ8u5juaXlgDJAp3DcmR/C40ReYoMcJFpJvE8fc4/5w=
+        </pin>
+        <pin digest="SHA-256">/Tcb6pdV/2DIgoyEm45SFd5TLWGwCYVfoK1jDZDu+C4=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">QuoVadis
+        </domain>
+        <pin digest="SHA-256">hqaPBQA0EmpUDTnbLF+RfvZqlPuWGfoezYJ86ka6DLA=
+        </pin>
+        <pin digest="SHA-256">j9ESw8g3DxR9XM06fYZeuN1UB4O6xp/GAIjjdD/zM3g=
+        </pin>
+        <pin digest="SHA-256">SkntvS+PgjC9VZKzE1c/4cFypF+pgBHMHt27Nq3j/OU=
+        </pin>
+        <pin digest="SHA-256">DHrKpxAiZyC7yUA0nuLmFIZSqJ2/QGojLIlfbceOu5o=
+        </pin>
+        <pin digest="SHA-256">80OOI7POUyUi+s8weSP1j9GGCOm6et3DDpUrQ8SWFsM=
+        </pin>
+        <pin digest="SHA-256">vj23t5v+V53PmwfKTK11r/FpdVaOW0XPyuTWH7Yxdag=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Sectigo
+        </domain>
+        <pin digest="SHA-256">vRU+17BDT2iGsXvOi76E7TQMcTLXAqj0+jGPdW7L1vM=
+        </pin>
+        <pin digest="SHA-256">AG1751Vd2CAmRCxPGieoDomhmJy4ezREjtIZTBgZbV4=
+        </pin>
+        <pin digest="SHA-256">58qRu/uxh4gFezqAcERupSkRYBlBAvfcw7mEjGPLnNU=
+        </pin>
+        <pin digest="SHA-256">grX4Ta9HpZx6tSHkmCrvpApTQGo67CYDnvprLg5yRME=
+        </pin>
+        <pin digest="SHA-256">ICGRfpgmOUXIWcQ/HXPLQTkFPEFPoDyjvH7ohhQpjzs=
+        </pin>
+        <pin digest="SHA-256">x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">SecureTrust
+        </domain>
+        <pin digest="SHA-256">JZaQTcTWma4gws703OR/KFk313RkrDcHRvUt6na6DCg=
+        </pin>
+        <pin digest="SHA-256">dykHF2FLJfEpZOvbOLX4PKrcD2w2sHd/iA/G3uHTOcw=
+        </pin>
+        <pin digest="SHA-256">LgbK4fwgsgDm+3SFV6RES+yTF9//LkFRZp4PeUTwqeA=
+        </pin>
+        <pin digest="SHA-256">SXEo/JBla4cpBIKyI++3IkD+nEIeeZON5fgRDLC+kFY=
+        </pin>
+        <pin digest="SHA-256">gosO7/JGVOj/WEGindXU4+0wlSykNCWnkoNAcgjTnRY=
+        </pin>
+        <pin digest="SHA-256">BRz5+pXkDpuD7a7aaWH2Fox4ecRmAXJHnN1RqwPOpis=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">SSL.com
+        </domain>
+        <pin digest="SHA-256">NIdnza073SiyuN1TUa7DDGjOxc1p0nbfOCfbxPWAZGQ=
+        </pin>
+        <pin digest="SHA-256">fNZ8JI9p2D/C+bsB3LH3rWejY9BGBDeW0JhMOiMfa7A=
+        </pin>
+        <pin digest="SHA-256">oyD01TTXvpfBro3QSZc1vIlcMjrdLTiL/M9mLCPX+Zo=
+        </pin>
+        <pin digest="SHA-256">0cRTd+vc1hjNFlHcLgLCHXUeWqn80bNDH/bs9qMTSPo=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">TrustCor Systems
+        </domain>
+        <pin digest="SHA-256">ev5LBxovH0b4upRKJtWE1ZYLkvtIw7obfKuEkF8yqs0=
+        </pin>
+        <pin digest="SHA-256">6of0Yt7v/713daoqS34Py5HCLu5t9p7ZAQDMxzsxFHY=
+        </pin>
+        <pin digest="SHA-256">xj1oxkihi3dkHEJ6Zp1hyXaKVfT80DIurJbFdwApnPE=
+        </pin>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">Dev CA
+        </domain>
+        <pin digest="SHA-256">T+g0wDNm93xNiZUjhIpyK3aQ4QexVTx2mgW03whZaBc=
+        </pin>
+    </domain-config>
+</network-security-config>

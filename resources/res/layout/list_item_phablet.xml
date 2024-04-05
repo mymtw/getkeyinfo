@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/clg_space_8" app:cardCornerRadius="@dimen/clg_corner_radius" app:cardElevation="@dimen/clg_elevation_4">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/clg_space_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.FullImageView android:layout_gravity="center_horizontal" android:id="@+id/phablet_avatar" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/clg_space_8" app:imageAspect="1"/>
+        <TextView android:gravity="center" android:id="@+id/phablet_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fixed_small_medium" style="@style/clg_text_title_large"/>
+        <TextView android:gravity="center" android:id="@+id/phablet_etsy_username" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/clg_text_body"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

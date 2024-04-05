@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_archive" android:title="@string/conversation_archive" app:showAsAction="never"/>
+    <item android:id="@+id/menu_mark_unread" android:title="@string/conversation_mark_as_unread" app:showAsAction="never"/>
+    <item android:id="@+id/menu_mark_spam" android:title="@string/conversation_mark_as_spam" app:showAsAction="never"/>
+</menu>

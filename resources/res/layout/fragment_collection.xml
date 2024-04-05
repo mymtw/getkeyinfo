@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:paddingLeft="@dimen/card_view_margin" android:paddingRight="@dimen/card_view_margin" android:paddingBottom="@dimen/margin_medium" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/partial_loading"/>
+    <com.etsy.android.uikit.view.EmptyMessageView android:layout_gravity="center" android:id="@+id/empty_message_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium"/>
+    <com.etsy.android.stylekit.views.CollageEmptyStateView android:layout_gravity="center" android:id="@+id/collection_empty_state_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_bodyText="@string/collection_error_state_body" app:clg_iconSrc="@drawable/clg_icon_brand_alert_v2" app:clg_primaryButtonText="@string/try_again" app:clg_secondaryButtonText="@string/collection_error_state_secondary_button" app:clg_titleText="@string/collection_error_state_heading_v2"/>
+    <com.etsy.android.uikit.view.SignInView android:layout_gravity="center" android:id="@+id/signin_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

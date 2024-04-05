@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:interpolator="@anim/clg_select_arrow_overshoot" android:duration="@android:integer/config_mediumAnimTime" android:valueFrom="180" android:valueTo="0" android:valueType="floatType" android:propertyName="rotation"/>

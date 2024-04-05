@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/partial_loading"/>
+    <include layout="@layout/partial_no_internet"/>
+    <com.etsy.android.stylekit.views.CollageEmptyStateView android:id="@+id/empty_state_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_bodyText="@string/save_for_later_no_items_body" app:clg_primaryButtonText="@string/save_for_later_no_items_cta" app:clg_titleText="@string/save_for_later_no_items_title" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view_save_for_later" android:layout_width="match_parent" android:layout_height="0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

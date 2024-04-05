@@ -1,0 +1,4 @@
+package com.paypal.pyplcheckout.shippingmethods.view.interfaces;
+
+public interface ShippingMethodsViewListener extends PayPalShippingMethodsHeaderViewListener, PayPalShippingMethodsRecyclerViewListener {
+}

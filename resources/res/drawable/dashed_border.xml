@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="-1dp" android:top="0dp" android:right="-1dp" android:bottom="-1dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/divider_height" android:color="@color/gray_color_300" android:dashWidth="@dimen/dash_width" android:dashGap="@dimen/dash_gap"/>
+            <solid android:color="@android:color/transparent"/>
+            <padding android:left="@dimen/padding_8x" android:top="@dimen/padding_8x" android:right="@dimen/padding_8x" android:bottom="@dimen/padding_8x"/>
+        </shape>
+    </item>
+</layer-list>

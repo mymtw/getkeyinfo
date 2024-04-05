@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_large" android:textColor="?attr/clg_color_text_primary" android:ellipsize="end" android:gravity="center" android:id="@+id/themeTag" android:background="@drawable/bg_pill_grey_outline_selector" android:paddingBottom="@dimen/related_tag_center_offset" android:layout_width="wrap_content" android:layout_height="@dimen/related_tag_height" android:maxLines="1" android:paddingStart="@dimen/related_tag_padding" android:paddingEnd="@dimen/related_tag_padding" style="@style/CardRecyclerSectionHeaderTitle"/>
+</FrameLayout>

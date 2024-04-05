@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.stylekit.views.CollageTextInput xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_8" android:text="@string/select_an_option" android:hint="@string/select_an_option" app:clg_required="true" app:clg_small="true" app:endDrawable="@drawable/clg_icon_core_navigatedown_v1"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/listing_purchase_buttons" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/button_express_checkout" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/clg_space_8" android:layout_marginRight="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_12" android:text="@string/buy_it_now" style="@style/clg_button_primary"/>
+    <include android:id="@+id/button_express_google_pay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/tap_target_size_sp" android:layout_marginLeft="@dimen/clg_space_8" android:layout_marginRight="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_12" layout="@layout/buy_with_googlepay_button"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/button_cart_redesign_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/clg_space_8" android:layout_marginRight="@dimen/clg_space_8" android:layout_marginBottom="@dimen/clg_space_12">
+        <Button android:id="@+id/button_cart_redesign" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/add_to_cart" app:layout_constraintTop_toTopOf="0" style="@style/clg_button_secondary"/>
+        <TextSwitcher android:id="@+id/button_cart_redesign_text_switcher" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/button_cart_redesign" app:layout_constraintTop_toTopOf="@+id/button_cart_redesign">
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@style/clg_text_title"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@style/clg_text_title"/>
+        </TextSwitcher>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

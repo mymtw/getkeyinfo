@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textColor="?attr/clg_color_text_tertiary" android:gravity="center" android:id="@+id/empty_view_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_36" android:layout_marginHorizontal="@dimen/clg_space_36" style="@style/clg_text_body"/>
+        <com.etsy.android.stylekit.views.CollageEmptyStateView android:layout_gravity="center" android:id="@+id/error_state_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_bodyText="@string/please_try_again" app:clg_iconSrc="@drawable/clg_icon_brand_alert_v2" app:clg_primaryButtonText="@string/try_again" app:clg_titleText="@string/conversation_error_state_title"/>
+        <com.etsy.android.stylekit.views.LoadingIndicatorView android:layout_gravity="center" android:id="@+id/loading_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/loading" app:isLarge="true"/>
+    </FrameLayout>
+    <include layout="@layout/compose_message"/>
+</LinearLayout>

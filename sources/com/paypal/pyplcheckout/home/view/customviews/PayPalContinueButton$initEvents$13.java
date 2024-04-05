@@ -1,0 +1,19 @@
+package com.paypal.pyplcheckout.home.view.customviews;
+
+import com.paypal.pyplcheckout.events.EventListener;
+import com.paypal.pyplcheckout.events.EventType;
+import com.paypal.pyplcheckout.events.ResultData;
+import kotlin.jvm.internal.C19383o;
+
+public final class PayPalContinueButton$initEvents$13 implements EventListener {
+    public final /* synthetic */ PayPalContinueButton this$0;
+
+    public PayPalContinueButton$initEvents$13(PayPalContinueButton payPalContinueButton) {
+        this.this$0 = payPalContinueButton;
+    }
+
+    public void onEvent(EventType eventType, ResultData resultData) {
+        C19383o.m32797g(eventType, "type");
+        this.this$0.finishCheckout();
+    }
+}

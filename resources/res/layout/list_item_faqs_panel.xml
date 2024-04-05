@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsy.android.stylekit.views.CollageContentToggle xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/faqs_panel" android:layout_width="match_parent" android:layout_height="wrap_content" app:clg_isExpanded="true" app:clg_showBottomDivider="false" app:clg_titleText="@string/faqs_title_listing">
+    <com.etsy.android.uikit.view.TranslateButton android:id="@+id/faqs_translation_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/clg_space_16"/>
+</com.etsy.android.stylekit.views.CollageContentToggle>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fixed_medium">
+        <androidx.appcompat.widget.SearchView android:id="@+id/internal_search_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:closeIcon="@drawable/clg_icon_core_close_v1"/>
+    </androidx.cardview.widget.CardView>
+</merge>

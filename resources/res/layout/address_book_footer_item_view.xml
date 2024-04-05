@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?android:attr/selectableItemBackground" android:paddingLeft="@dimen/padding_48x" android:paddingRight="@dimen/padding_48x" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_16x" android:paddingStart="@dimen/padding_48x" android:paddingEnd="@dimen/padding_48x">
+    <com.paypal.pyplcheckout.home.view.customviews.PayPalActionButton android:gravity="center" android:id="@+id/add_new_address_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/paypal_checkout_plus_shipping"/>
+</RelativeLayout>

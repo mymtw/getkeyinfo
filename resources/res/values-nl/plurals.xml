@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="conversation_uploading_image">
+        <item quantity="one">Afbeelding aan het uploaden</item>
+        <item quantity="other">Afbeeldingen aan het uploaden</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d seconde vooruitspoelen</item>
+        <item quantity="other">%d seconden vooruitspoelen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d seconde terugspoelen</item>
+        <item quantity="other">%d seconden terugspoelen</item>
+    </plurals>
+    <plurals name="follower_counts">
+        <item quantity="one">1 Volger</item>
+        <item quantity="other">%s Volgers</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="one">Volger</item>
+        <item quantity="other">Volgers</item>
+    </plurals>
+    <plurals name="in_n_carts">
+        <item quantity="one">In winkelwagen van %s personen</item>
+        <item quantity="other">In winkelwagen van %s mensen</item>
+    </plurals>
+    <plurals name="in_n_carts_variant">
+        <item quantity="one">In %s winkelwagen</item>
+        <item quantity="other">In %s winkelwagens</item>
+    </plurals>
+    <plurals name="item_lowercase_quantity">
+        <item quantity="one">%s item</item>
+        <item quantity="other">%s items</item>
+    </plurals>
+    <plurals name="listing_sale_ends_soon_badge_hours">
+        <item quantity="one">Sale eindigt over 1 uur</item>
+        <item quantity="other">Sale eindigt over %s uur</item>
+    </plurals>
+    <plurals name="listing_sale_ends_soon_badge_minutes">
+        <item quantity="one">Sale eindigt over 1 minuut</item>
+        <item quantity="other">Sale eindigt over %s minuten</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="n_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="n_items_available">
+        <item quantity="one">%d beschikbaar</item>
+        <item quantity="other">%d beschikbaar</item>
+    </plurals>
+    <plurals name="native_buy_it_now_order_summary_expanded_total_label">
+        <item quantity="one">Totaal (1 item)</item>
+        <item quantity="other">Totaal (%s items)</item>
+    </plurals>
+    <plurals name="owner_of_shop">
+        <item quantity="one">Eigenaar van %s</item>
+        <item quantity="other">Eigenaren van %s</item>
+    </plurals>
+    <plurals name="review_counts">
+        <item quantity="one">(1 Recensie)</item>
+        <item quantity="other">(%d recensies)</item>
+    </plurals>
+    <plurals name="sale_ending_hours">
+        <item quantity="one">Sale eindigt over 1 uur</item>
+        <item quantity="other">Sale eindigt over %s uur</item>
+    </plurals>
+    <plurals name="sale_ending_mins">
+        <item quantity="one">Sale eindigt over 1 minuut</item>
+        <item quantity="other">Sale eindigt over %s minuten</item>
+    </plurals>
+    <plurals name="search_filters_show_results_with_count">
+        <item quantity="one">Toon 1 resultaat</item>
+        <item quantity="other">Toon %s resultaten</item>
+    </plurals>
+    <plurals name="search_shops_found">
+        <item quantity="one">@string/shops_found_single</item>
+        <item quantity="other">@string/shops_found</item>
+    </plurals>
+    <plurals name="shipping_delivery_notification_big_title">
+        <item quantity="one">Je bestelling is geleverd</item>
+        <item quantity="other">%s bestellingen zijn geleverd</item>
+    </plurals>
+    <plurals name="shipping_processing_days">
+        <item quantity="one">%s werkdag</item>
+        <item quantity="other">%s werkdagen</item>
+    </plurals>
+    <plurals name="shop_home_all_reviews_review_counts">
+        <item quantity="one">1 recensie</item>
+        <item quantity="other">%s recensies</item>
+    </plurals>
+    <plurals name="sold_order_subject_item_different_plural">
+        <item quantity="one">Heeft iets bij je gekocht</item>
+        <item quantity="other">%d items bij jou gekocht</item>
+    </plurals>
+    <plurals name="structured_refunds_day_options">
+        <item quantity="one">%s dag na aankoop</item>
+        <item quantity="other">%s dagen na aankoop</item>
+    </plurals>
+    <plurals name="structured_refunds_days">
+        <item quantity="one">%s dag na levering</item>
+        <item quantity="other">%s dagen na levering</item>
+    </plurals>
+    <plurals name="structured_refunds_days_of_purchase">
+        <item quantity="one">%s dag na aankoop</item>
+        <item quantity="other">%s dagen na aankoop</item>
+    </plurals>
+    <plurals name="structured_refunds_hour_options">
+        <item quantity="one">%s uur na aankoop</item>
+        <item quantity="other">%s uren na aankoop</item>
+    </plurals>
+    <plurals name="structured_refunds_hours_of_purchase">
+        <item quantity="one">%s uur na aankoop</item>
+        <item quantity="other">%s uren na aankoop</item>
+    </plurals>
+    <plurals name="variation_summary">
+        <item quantity="one">%1$s (1 optie)</item>
+        <item quantity="other">%1$s (%2$d opties)</item>
+    </plurals>
+</resources>

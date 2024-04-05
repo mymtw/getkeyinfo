@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/clg_color_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/clg_space_12" android:layout_marginBottom="@dimen/clg_space_12" android:layout_marginStart="@dimen/clg_space_4" android:layout_marginEnd="@dimen/clg_space_4"/>

@@ -1,0 +1,15 @@
+package com.paypal.pyplcheckout.common.cache;
+
+public enum BooleanPrefConstants {
+    FINISH_CHECKOUT_AND_APPROVE_FIRED("FINISH_CHECKOUT_AND_APPROVE_FIRED"),
+    ADD_MANUALLY("ADD_MANUALLY"),
+    BLOCK_NON_DOMESTIC_SHIPPING("BLOCK_NON_DOMESTIC_SHIPPING"),
+    COMING_FROM_REVIEW("COMING_FROM_REVIEW"),
+    IS_SMART_PAYMENT("IS_SMART_PAYMENT"),
+    DID_CCT_OPEN("DID_CCT_OPEN"),
+    IS_FALLBACK("IS_FALLBACK"),
+    IS_ORDER_CREATED("IS_ORDER_CREATED");
+
+    private BooleanPrefConstants(String str) {
+    }
+}

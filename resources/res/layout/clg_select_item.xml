@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tap_target_size_sp" android:paddingStart="@dimen/clg_space_16" android:paddingEnd="@dimen/clg_space_16">
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/clg_select_dropdown_item_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/clg_space_16" style="@style/clg_text_body"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/clg_select_dropdown_item_checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clg_select_checkmark" android:contentDescription="?attr/clg_selected_content_description"/>
+</LinearLayout>

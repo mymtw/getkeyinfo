@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MultiShopCartGroupItem">
+    <EditText android:textColorHint="?attr/clg_color_text_tertiary" android:id="@+id/txt_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none|text|textCapSentences|textAutoComplete" android:imeOptions="actionDone" style="@style/TextBlack"/>
+</LinearLayout>

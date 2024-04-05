@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clg_select_label_container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:labelFor="@+id/clg_select_input">
+        <TextView android:id="@+id/clg_select_label" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clg_text_title_small"/>
+        <TextView android:textColor="?attr/clg_color_text_error" android:id="@+id/clg_select_required_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:contentDescription="?attr/clg_required_content_description" app:layout_constraintStart_toEndOf="@+id/clg_select_label" app:layout_constraintTop_toTopOf="0" style="@style/clg_text_title_small"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/clg_select_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_4" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/clg_select_label_container" style="@style/clg_select_layout">
+        <AutoCompleteTextView android:id="@+id/clg_select_input" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/clg_select_text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textColor="?attr/clg_color_text_error" android:id="@+id/clg_select_error" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_4" app:layout_constraintStart_toStartOf="@+id/clg_select_layout" app:layout_constraintTop_toBottomOf="@+id/clg_select_layout" style="@style/clg_text_body_small"/>
+</merge>

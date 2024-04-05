@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/interactive_element_size_small" android:width="@dimen/interactive_element_size_small" android:viewportWidth="60" android:viewportHeight="60">
+    <path android:name="unselected_outline" android:pathData="M11 3l 41 0a5 5 0 0 1 5 5l 0 44a5 5 0 0 1 -5 5l -44 0a5 5 0 0 1 -5 -5al 0 -44a5 5 0 0 1 5 -5z" android:strokeColor="?attr/clg_color_interaction_disabled" android:strokeWidth="6"/>
+</vector>

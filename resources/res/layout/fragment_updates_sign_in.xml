@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/empty_image" android:layout_marginBottom="@dimen/clg_space_24" android:src="@drawable/clg_icon_brand_tipreminder_v2" android:importantForAccessibility="no" style="@style/clg_brand_icon_empty"/>
+        <TextView android:gravity="center" android:id="@+id/empty_view_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clg_space_12" android:text="@string/updates_signin_heading_v2" android:layout_marginStart="@dimen/clg_space_36" android:layout_marginEnd="@dimen/clg_space_36" style="@style/clg_text_heading"/>
+        <TextView android:gravity="center" android:id="@+id/empty_view_subtext" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/updates_signin_text_v2" android:layout_marginStart="@dimen/clg_space_36" android:layout_marginEnd="@dimen/clg_space_36" style="@style/clg_text_body"/>
+        <Button android:gravity="center" android:id="@+id/signin_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_24" android:text="@string/tab_signin_button" style="@style/clg_button_primary"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

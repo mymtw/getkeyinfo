@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/video_review_thumbnail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/clg_touch_feedback" android:layout_marginEnd="@dimen/clg_space_8">
+    <ImageView android:id="@+id/img_looping_thumbnail" android:layout_width="@dimen/listing_looping_thumbnail_size" android:layout_height="@dimen/listing_looping_thumbnail_size" android:scaleType="centerCrop" android:adjustViewBounds="false"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/play_video_icon" android:visibility="gone" android:layout_width="@dimen/listing_looping_thumbnail_video_icon_size" android:layout_height="@dimen/listing_looping_thumbnail_video_icon_size" android:src="@drawable/ic_play_button_24pt" android:scaleType="fitCenter" android:contentDescription="@string/listing_play_video_desc"/>
+</FrameLayout>

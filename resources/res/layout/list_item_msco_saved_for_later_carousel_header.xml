@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_saved" android:layout_marginStart="@dimen/clg_space_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clg_text_title"/>
+    <TextView android:id="@+id/saved_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/clg_space_8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/title" app:layout_constraintTop_toTopOf="0" style="@style/clg_badge_notification_primary"/>
+    <Button android:id="@+id/see_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clg_button_secondary_alt_small"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

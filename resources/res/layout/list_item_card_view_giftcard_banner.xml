@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/EtsyFindsCardViewStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.etsy.android.uikit.view.FullImageView android:id="@+id/banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_8" app:imageAspect="0.28"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/clg_space_16" android:layout_marginTop="@dimen/clg_space_16" android:layout_marginRight="@dimen/clg_space_16" style="@style/clg_text_body"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/clg_space_2" android:layout_marginBottom="@dimen/clg_space_4" style="@style/clg_button_secondary_alt"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splits xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="https://schemas.android.com/tools" xmlns:aapt="http://schemas.android.com/aapt">
+    <module name="">
+        <language>
+            <entry key="de" split=""/>
+            <entry key="en" split=""/>
+            <entry key="es" split=""/>
+            <entry key="fr" split=""/>
+            <entry key="it" split=""/>
+            <entry key="ja" split=""/>
+            <entry key="nl" split=""/>
+            <entry key="pl" split=""/>
+            <entry key="pt" split=""/>
+            <entry key="ru" split=""/>
+        </language>
+    </module>
+</splits>
